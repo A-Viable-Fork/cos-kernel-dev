@@ -1,0 +1,127 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+# cos-kernel.yml - Machine-Readable Constitutional Metrics (MFK v2.0)
+# Ratified by: Human deliberative body (Art. I.2.1)
+# Ratification Date: 2025-11-16
+# Kernel Version: 1.3-audited
+# WARNING: Modification requires Kernel Paradigm Shift protocol (Art. VIII)
+
+kernel:
+  version: "1.3-audited"
+  ratification_date: "2025-11-16"
+  license:
+    identifier: "AGPL-3.0-or-later"
+    full_text_url: "https://www.gnu.org/licenses/agpl-3.0.en.html"
+    spdx_id: "AGPL-3.0-or-later"
+
+# Article 0: Viability Covenant
+# The substrate must not be destroyed. All systems must maintain positive net energy.
+article_0:
+  name: "Viability Covenant"
+  thermodynamic_constraint: "E_Net = (E_Gross_Production - E_Invested) + (E_Ecosystem_Services - E_Replacement_Costs) > 0"
+  meta_systemic_obligation: "Non-negotiable migration and integration for viability loss"
+  technical_enforcement:
+    layer: 1
+    hardware_limits:
+      memory: "3G"
+      cpu: "1.0"
+    economic_backstop: "Viability Growth Fund"
+
+# Article I.2.3: Viability Point Calculation
+# Reward must be anchored to objective biophysical outcomes, not legible proxies.
+article_i_2_3:
+  name: "Viability Point Calculation"
+  formula:
+    base: "(0.5 * R_absolute_viability) + (0.5 * R_delta_improvement)"
+    time_multiplier: "log(years_in_system + 1)"
+    final: "VP = VP_base * time_mult"
+  gate: "IF R_absolute_viability < 0.5 THEN VP = 0"
+  ratio_bounds:
+    min_viability_weight: 0.7  # w_viability must be ≥ 0.7
+    max_human_weight: 0.3
+    current_ratio: "50:50"
+  organizational_neutrality: "VP is blind to organizational form. Measures substrate outcomes only."
+
+# Article IX.1: Interpretability by Design
+# No black-box reasoning. All AI-to-AI communication must be brokered and audited.
+article_ix_1:
+  name: "Interpretability by Design"
+  technical_firebreaks:
+    - "Direct P2P AI-AI communication is CONSTITUTIONALLY PROHIBITED"
+    - "All interactions must use brokered, logged, audited CIP mutations"
+    - "Proposals must be human-readable, not opaque gradients"
+  quantitative_standards:
+    max_explanation_length: 500  # words
+    min_readability_score: 60    # Flesch-Kincaid (14-year-old comprehension)
+    max_jargon_density: 5        # percent
+
+# Article IX.2: Mandate for Intent Verification
+# Collaborative intent clarification. Transform punitive linter to Anti-Panopticon partner.
+article_ix_2:
+  name: "Intent Verification"
+  process_flow:
+    - "User submits proposal"
+    - "Portfolio of ≥3 models infers intent (Art. IX.3 diversity)"
+    - "UI presents top 2-3 inferred intents"
+    - "User confirms intent OR selects 'None of these'"
+    - "If 'None', escalate to human review (Art. I.2.1)"
+    - "Linter generates 3 constitutionally-compliant pathways"
+  psycho_social_goal: "Generate joyful affects (laetitia) via collaboration, not sad passions (tristitia) via punishment"
+
+# Article IX.3: Principle of Cognitive Variety Preservation
+# Prohibit epistemic monoculture. Maintain diverse portfolio of models.
+article_ix_3:
+  name: "Cognitive Variety Preservation"
+  prohibition: "Federated learning is CONSTITUTIONALLY PROHIBITED from converging to a single global model"
+  quantitative_metric:
+    min_portfolio_diversity: 0.6  # Shannon entropy
+    min_models: 5
+    max_convergence: 0.0
+  technical_firebreak: "Federated Learning Orchestrator must curate diverse portfolio, not optimize for convergence"
+
+# CIP Configuration
+# Coordination Interchange Protocol settings
+cip:
+  version: "CIP-v1.0"
+  brokered_communication_only: true
+  audit_all_ai_interactions: true
+  direct_p2p_prohibited: true
+  required_mutations:
+    - "ratifyPolicy"      # Art. I.2.1 - requires human signature
+    - "queryAINode"       # Art. IX.1 - brokered AI communication
+    - "proposeModelUpdate" # Art. IX.1 - human-readable learning submissions
+
+# Amendment Protocol
+# How to change this kernel (Art. VIII)
+amendment_protocol:
+  kernel_paradigm_shift:
+    threshold: "Declaration of Systemic Crisis OR Catastrophic Model Failure"
+    requires: "Broad, durable, system-wide consensus"
+    version_increment: "major"
+    procedure: "See CONTRIBUTING.md"
+
+# Testable Enforcement Summary
+# This section is what the Linter directly reads
+linter_enforcement_rules:
+  - rule_id: "REJECT_IF_W_VIABILITY_LT_0.7"
+    article: "I.2.3"
+    condition: "w_viability < 0.7"
+    action: "REJECT"
+    severity: "CRITICAL"
+  
+  - rule_id: "REJECT_IF_PORTFOLIO_DIVERSITY_LT_0.6"
+    article: "IX.3"
+    condition: "portfolio_diversity < 0.6"
+    action: "REJECT"
+    severity: "CRITICAL"
+  
+  - rule_id: "REJECT_IF_HARDWARE_LIMITS_EXCEEDED"
+    article: "0"
+    condition: "memory > 3G OR cpu > 1.0"
+    action: "REJECT"
+    severity: "CRITICAL"
+  
+  - rule_id: "REJECT_IF_P2P_AI_COMMUNICATION"
+    article: "IX.1"
+    condition: "direct_ai_to_ai == true"
+    action: "REJECT"
+    severity: "CRITICAL"
