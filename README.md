@@ -7,7 +7,7 @@
 # Component: cos-kernel (Constitutional Kernel v1.3-audited)
 # Ratified by: Human deliberative body (Art. I.2.1)
 # Ratification Date: 2025-11-16
-# Source: https://github.com/YOUR_USERNAME/cos-kernel
+# Source: https://github.com/A-Viable-Fork/cos-kernel
 
 ## What is this?
 
@@ -83,5 +83,5 @@ The kernel enforces the **Linter Transformation**, converting punitive "NO" into
 
 1. **Include as submodule**:
 ```bash
-git submodule add https://github.com/YOUR_USERNAME/cos-kernel.git cos-kernel
+git submodule add https://github.com/A-Viable-Fork/cos-kernel.git cos-kernel
 git submodule set-branch --branch main cos-kernel
